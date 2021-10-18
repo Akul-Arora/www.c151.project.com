@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  
+  <script src="carbase.js"></script>
+ <!-- <script src="car.js"></script> -->
+  
+  
+  
+</head>
+<body>
+    <a-scene background="white">
+
+        <a-camera  
+        wasd-controls-enabled position="0 1.6 0" camera-zoom-out>
+        </a-camera>
+        <a-entity position="0 0 0"></a-entity>
+
+        <a-assets>
+          <a-asset-item id="Car-obj" src="./assets/tinker.obj"></a-asset-intem>
+              <a-asset-item id="Car-mtl" src="./assets/obj.mtl"></a-asset-item>
+      </a-assets>
+        
+      <a-entity obj-model="obj:#Car-obj;mtl:#Car-mtl"
+position="0 0 0" rotation="-90 0 0" scale="0.1 0.1 0.1 ">
+
+  </a-entity>
+</body>
